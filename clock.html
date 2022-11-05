@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>watch</title>
+</head>
+    <link rel="stylesheet" href="./style.css">
+
+<body>
+  <center>
+    <div style="size: 20px;">
+<div id="clock"></div>
+</center>
+</div>
+<script>
+	setInterval(() => {
+  let date = new Date()
+  let clock = document.getElementById('clock')
+  clock.innerHTML = 
+    date.getHours()+":"+
+    date.getMinutes()+":"+
+    date.getSeconds()
+}, 1000);
+</script>
+</body>
+</html>
